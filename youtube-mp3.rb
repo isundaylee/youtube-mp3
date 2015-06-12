@@ -13,7 +13,6 @@ end
 def run(title, command)
   command += ' 2>&1 >/dev/null'
   puts title + " ..."
-  puts command
   `#{command}`
 end
 
