@@ -1,0 +1,16 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    rmmseg-cpp (0.2.9)
+    ruby-pinyin (0.4.5)
+      rmmseg-cpp (~> 0.2)
+    taglib-ruby (0.7.0)
+    trollop (2.1.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  ruby-pinyin
+  taglib-ruby
+  trollop
