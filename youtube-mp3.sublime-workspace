@@ -80,6 +80,14 @@
 			}
 		},
 		{
+			"file": "youtube-mp3.rb",
+			"settings":
+			{
+				"buffer_size": 1568,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "lib/id3_writer.rb",
 			"settings":
 			{
@@ -88,18 +96,10 @@
 			}
 		},
 		{
-			"file": "youtube-mp3.rb",
+			"contents": "\n  BRANCH:  On branch `master` tracking `origin/master`.\n  ROOT:    ~/Programming/Git/youtube-mp3\n  HEAD:    5af2790 Disable logging.\n\n  UNSTAGED:\n    youtube-mp3.sublime-workspace\n\n  UNTRACKED:\n    song.m4a\n    song.mp3.part\n    song.opus\n\n  ###################                   ###############\n  ## SELECTED FILE ##                   ## ALL FILES ##\n  ###################                   ###############\n\n  [o] open file                         [a] stage all unstaged files\n  [s] stage file                        [A] stage all unstaged and untracked files\n  [u] unstage file                      [U] unstage all staged files\n  [d] discard changes to file           [D] discard all unstaged changes\n  [h] open file on remote\n  [M] launch external merge tool for conflict\n\n  [l] diff file inline                  [f] diff all files\n  [e] diff file                         [F] diff all cached files\n\n  #############                         #############\n  ## ACTIONS ##                         ## STASHES ##\n  #############                         #############\n\n  [c] commit                            [t][a] apply stash\n  [C] commit, including unstaged        [t][p] pop stash\n  [m] amend previous commit             [t][s] show stash\n                                        [t][c] create stash\n  [i] ignore file                       [t][u] create stash including untracked files\n  [I] ignore pattern                    [t][d] discard stash\n\n  ###########\n  ## OTHER ##\n  ###########\n\n  [r] refresh status\n\n-\n",
 			"settings":
 			{
-				"buffer_size": 1416,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "\n  BRANCH:  On branch `master`.\n  ROOT:    ~/Programming/Git/youtube-mp3\n  HEAD:    1d11579 Initial working!\n\n    Your working directory is clean.\n\n  ###################                   ###############\n  ## SELECTED FILE ##                   ## ALL FILES ##\n  ###################                   ###############\n\n  [o] open file                         [a] stage all unstaged files\n  [s] stage file                        [A] stage all unstaged and untracked files\n  [u] unstage file                      [U] unstage all staged files\n  [d] discard changes to file           [D] discard all unstaged changes\n  [h] open file on remote\n  [M] launch external merge tool for conflict\n\n  [l] diff file inline                  [f] diff all files\n  [e] diff file                         [F] diff all cached files\n\n  #############                         #############\n  ## ACTIONS ##                         ## STASHES ##\n  #############                         #############\n\n  [c] commit                            [t][a] apply stash\n  [C] commit, including unstaged        [t][p] pop stash\n  [m] amend previous commit             [t][s] show stash\n                                        [t][c] create stash\n  [i] ignore file                       [t][u] create stash including untracked files\n  [I] ignore pattern                    [t][d] discard stash\n\n  ###########\n  ## OTHER ##\n  ###########\n\n  [r] refresh status\n\n-\n",
-			"settings":
-			{
-				"buffer_size": 1422,
+				"buffer_size": 1515,
 				"line_ending": "Unix",
 				"name": "STATUS: youtube-mp3",
 				"read_only": true,
@@ -114,10 +114,18 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 400.0,
-		"last_filter": "gs",
+		"height": 306.0,
+		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"gccf",
+				"git: checkout current file"
+			],
+			[
+				"gp",
+				"git: push"
+			],
 			[
 				"gs",
 				"git: status"
@@ -275,6 +283,7 @@
 	],
 	"file_history":
 	[
+		"/Users/Sunday/Programming/Git/youtube-mp3/youtube-mp3.rb",
 		"/Users/Sunday/Programming/Git/xiami_cloner/lib/xiami_cloner.rb",
 		"/Users/Sunday/Library/Application Support/Sublime Text 3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc",
 		"/Users/Sunday/.dotfiles/bin/mem",
@@ -424,7 +433,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -510,6 +519,7 @@
 							"encoding_helper_encoding": "UTF-8",
 							"encoding_thread_running": true,
 							"git_savvy.file_path": "/Users/Sunday/Programming/Git/youtube-mp3/Gemfile",
+							"git_savvy.repo_path": "/Users/Sunday/Programming/Git/youtube-mp3",
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
@@ -521,11 +531,108 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
+					"file": "youtube-mp3.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1568,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								306,
+								306
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_complete": false,
+							"bh_regions":
+							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"encoding_helper_encoding": "UTF-8",
+							"encoding_thread_running": true,
+							"git_savvy.file_path": "/Users/Sunday/Programming/Git/youtube-mp3/youtube-mp3.rb",
+							"git_savvy.repo_path": "/Users/Sunday/Programming/Git/youtube-mp3",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 152.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
 					"file": "lib/id3_writer.rb",
 					"semi_transient": false,
 					"settings":
@@ -537,8 +644,8 @@
 						"selection":
 						[
 							[
-								393,
-								393
+								394,
+								394
 							]
 						],
 						"settings":
@@ -607,6 +714,7 @@
 							"encoding_helper_encoding": "UTF-8",
 							"encoding_thread_running": true,
 							"git_savvy.file_path": "/Users/Sunday/Programming/Git/youtube-mp3/lib/id3_writer.rb",
+							"git_savvy.repo_path": "/Users/Sunday/Programming/Git/youtube-mp3",
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
@@ -618,103 +726,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "youtube-mp3.rb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1416,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								231,
-								231
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"_anf_new": "",
-							"auto_complete": false,
-							"bh_regions":
-							[
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
-							],
-							"encoding_helper_encoding": "UTF-8",
-							"encoding_thread_running": true,
-							"git_savvy.file_path": "/Users/Sunday/Programming/Git/youtube-mp3/youtube-mp3.rb",
-							"git_savvy.repo_path": "/Users/Sunday/Programming/Git/youtube-mp3",
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -722,15 +734,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1422,
+						"buffer_size": 1515,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								260,
-								260
+								1066,
+								1066
 							]
 						],
 						"settings":
@@ -802,14 +814,18 @@
 							"git_savvy.repo_path": "/Users/Sunday/Programming/Git/youtube-mp3",
 							"git_savvy.status_view": true,
 							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
 							"syntax": "Packages/GitSavvy/syntax/status.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
 							"word_wrap": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -867,6 +883,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"rb",
+				"youtube-mp3.rb"
+			],
 			[
 				"project",
 				"wbl.sublime-project"
