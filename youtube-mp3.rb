@@ -40,13 +40,23 @@ url = ARGV[0]
 output = opts[:output] || "song.mp3"
 
 output_m4a = File.join(File.dirname(output), "#{File.basename(output, '.*')}.m4a")
+output_ogg = File.join(File.dirname(output), "#{File.basename(output, '.*')}.ogg")
 output_mp3 = File.join(File.dirname(output), "#{File.basename(output, '.*')}.mp3")
 
 FileUtils.rm_f(output_mp3)
 run('Downloading', "youtube-dl -x '#{url}' -o #{output}", opts[:verbose])
 
 if !File.exists?(output_mp3)
-  run('Converting', "ffmpeg -i #{output_m4a} -q:a 0 -f mp3 #{output_mp3}", opts[:verbose])
+  input_file = nil
+
+  input_file = output_m4a if File.exist?(output_m4a)
+  input_file = output_ogg if File.exist?(output_ogg)
+
+  if input_file.nil?
+    puts 'FATAL: Neither m4a nor ogg file is present. '
+  end
+
+  run('Converting', "ffmpeg -i #{input_file} -q:a 0 -f mp3 #{output_mp3}", opts[:verbose])
   FileUtils.rm_f(output_m4a)
 end
 
