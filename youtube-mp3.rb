@@ -57,7 +57,7 @@ if !File.exists?(output_mp3)
   end
 
   run('Converting', "ffmpeg -i #{input_file} -q:a 0 -f mp3 #{output_mp3}", opts[:verbose])
-  FileUtils.rm_f(output_m4a)
+  FileUtils.rm_f(input_file)
 end
 
 run('Tagging', 'echo', opts[:verbose])
