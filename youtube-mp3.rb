@@ -41,6 +41,7 @@ output = opts[:output] || "song.mp3"
 
 output_m4a = File.join(File.dirname(output), "#{File.basename(output, '.*')}.m4a")
 output_ogg = File.join(File.dirname(output), "#{File.basename(output, '.*')}.ogg")
+output_opus = File.join(File.dirname(output), "#{File.basename(output, '.*')}.opus")
 output_mp3 = File.join(File.dirname(output), "#{File.basename(output, '.*')}.mp3")
 
 FileUtils.rm_f(output_mp3)
@@ -51,9 +52,11 @@ if !File.exists?(output_mp3)
 
   input_file = output_m4a if File.exist?(output_m4a)
   input_file = output_ogg if File.exist?(output_ogg)
+  input_file = output_opus if File.exists?(output_opus)
 
   if input_file.nil?
-    puts 'FATAL: Neither m4a nor ogg file is present. '
+    puts 'FATAL: None of m4a, ogg, or opus file is present. '
+    exit
   end
 
   run('Converting', "ffmpeg -i #{input_file} -q:a 0 -f mp3 #{output_mp3}", opts[:verbose])
